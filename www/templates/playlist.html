@@ -1,0 +1,17 @@
+<ion-view title="<i class='icon ion-happy'></i> [ {{room.title}} ] Chatroom">
+  <ion-content class="has-header">
+    <!-- h1>Playlist  {{room.id}}  {{room.title}} - {{ room.url }} </h1 -->
+
+	<div style="background-color: black; text-align:center;">
+	<iframe ng-src="{{ trustUrl(room.url) }}" 
+	style="overflow: scroll; height: 100%;" 
+	err-src="./img/lens404.png"></iframe>
+	<div>
+  </ion-content>
+  <div class="bar bar-footer bar-dark">
+	<div class="title">
+		  <i class="icon ion-chatbubble-working"></i> <i class="icon ion-android-social-user"></i>
+		  <!--i class="icon ion-refreshing"></i-->
+	</div>
+  </div>
+</ion-view>

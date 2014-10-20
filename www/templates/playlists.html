@@ -1,0 +1,18 @@
+<ion-view title="<i class='icon ion-android-forums'></i> Chatrooms">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+       <i class="icon ion-chatbubbles"></i> {{playlist.title}}
+	   <span class="item-icon-right">   
+		<i class="icon ion-chevron-right"></i>
+	   </span> 
+      </ion-item>
+    </ion-list> <!-- span ng-bind="{{playlist}}"></span -->
+  </ion-content>
+  <div class="bar bar-footer bar-dark">
+	<div class="title"><i class="icon ion-android-social-contact"></i> <i class="icon ion-android-social"></i></div>
+  </div>
+</ion-view>

@@ -1,0 +1,49 @@
+<ion-view title="<i class='icon ion-android-locate'></i> Locate">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+   <p>
+		<h5>
+		This App may have a hint at where you are and then you can go to a Chatroom with the name of your area.
+		</h5>	
+	</p>	
+	<p class="padding row">  
+		
+        <button class="button button-stable col" ng-click="logala()">
+				<i class='icon ion-android-locate'></i> Locate <i class='icon ion-navigate'></i>
+        </button>	
+		
+	</p>	
+    <ion-list>
+      <ion-item ng-repeat="lalo in latlon" href="#/app/playlists/{{ playlists.length }}">	   
+	   <i class="icon ion-location"></i> {{lalo.res}}  
+	   <i class="icon ion-chatbubbles"></i>
+	   <span class="item-icon-right">   
+		<i class="icon ion-chevron-right"></i>
+	   </span> 
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item ng-repeat="lalo in latlon" href="#/app/playlists/{{ playlists.length +1 }}">
+	   <i class="icon ion-location"></i> {{lalo.res2}}  
+	   <i class="icon ion-chatbubbles"></i>
+	   <span class="item-icon-right">   
+		<i class="icon ion-chevron-right"></i>
+	   </span> 
+      </ion-item>
+    </ion-list>
+	<ion-list>
+      <ion-item ng-repeat="lalo in latlon" href="#/app/playlists/{{ playlists.length +2 }}">   
+	   <i class="icon ion-location"></i> {{lalo.res3}} 
+	   <i class="icon ion-chatbubbles"></i>
+	   <span class="item-icon-right">   
+		<i class="icon ion-chevron-right"></i>
+	   </span> 
+      </ion-item>
+    </ion-list>	
+  </ion-content>
+  <div class="bar bar-footer bar-dark">
+	<div class="title"><i class="icon ion-ionic"></i></div>
+  </div>
+</ion-view>
